@@ -4,8 +4,11 @@ import com.sun.xml.internal.messaging.saaj.packaging.mime.util.LineInputStream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDataBase {
+
+    public static Supplier<List<Student>> studentSupplier=(()->getAllStudents());
 
     public static List<Student> getAllStudents(){
 
